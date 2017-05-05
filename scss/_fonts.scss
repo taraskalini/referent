@@ -1,0 +1,7 @@
+@import "bourbon";
+
+//@include font-face("Fregat", "../fonts/FregatBoldItalic/Fregat_bold_italic", 700 , italic , $file-formats: eot woff ttf svg);
+
+@include font-face("Myriad Pro", "../fonts/MyriadPro/MyriadProRegular/MyriadProRegular", 400 , italic , $file-formats: eot woff ttf svg);
+
+@include font-face("Myriad Pro", "../fonts/MyriadPro/MyriadProBold/MyriadProBold", 700 , italic , $file-formats: eot woff ttf svg);
