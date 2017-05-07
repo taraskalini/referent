@@ -12,6 +12,8 @@ $(function() {
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
+    $('.popup').magnificPopup();
+
     $('.hamburger').on('click',function(){
         $(this).toggleClass('is-active');
         $(".head-mnu ul").toggleClass('is-active');
@@ -21,6 +23,13 @@ $(function() {
         $('.hamburger').removeClass('is-active');
         $(".head-mnu ul").removeClass('is-active');
         event.stopPropagation();
+    });
+
+    $(".feed-back").on("click",function(e){
+        $(".feed-back-item").addClass("active");
+    });
+    $(".feed-back-close").on("click",function(e){
+        $(".feed-back-item").removeClass("active");
     });
 
     $(document).ready(function() {

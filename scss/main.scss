@@ -513,6 +513,142 @@ table{
   }
 }
 
+.popup-all{
+  position: relative;
+  margin: auto;
+  width: 50%;
+  height: auto;
+  padding: 0 25px;
+  padding-top: 20px;
+  background-color: #fffbbd;
+  @if $adaptive == true {
+    @media (max-width: 1100px){
+      width: 95%;
+    }
+  }
+  .p-bold{
+    font-weight: 700;
+  }
+  p{
+    color: #040404;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 20px;
+  }
+  .p-an{
+    font-weight: 400;
+    text-decoration: underline;
+  }
+}
+
+.a-popup{
+  color: #040404;
+  font-size: 20px;
+  text-decoration: underline;
+  margin-left: 5px;
+  &:hover,&:focus{
+    color: #040404;
+  }
+}
+
+.feed-back{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-image: url("../img/icons/phone.png");
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  width: 82px;
+  height: 86px;
+  cursor: pointer;
+  transition: .2s all;
+  box-shadow: 0 0 10px rgba(0,0,0,1);
+  animation: pzv-phone-animation 1.2s ease-in-out 0s normal none infinite running;
+  @if $adaptive == true {
+    @media (max-width: 1100px){
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+}
+
+@include keyframes(pzv-phone-animation) {
+  0%, 50%, 100% { transform: rotate(0deg); }
+  10%, 30% { transform: rotate(-25deg); }
+  20%, 40% { transform: rotate(25deg); }
+}
+
+.feed-back-item{
+  width: 291px;
+  height: 38px;
+  border-radius: 11px;
+  background-color: #fffabd;
+  position: fixed;
+  bottom: 70px;
+  right: 160px;
+  opacity: 0;
+  transform: scale(0);
+  box-shadow: 0 0 10px rgba(0,0,0,1);
+  padding: 5px 0;
+  transition: .3s all;
+  @if $adaptive == true {
+    @media (max-width: 1100px){
+      bottom: 40px;
+      right: 130px;
+    }
+    @media (max-width: 435px){
+      bottom: 125px;
+      right: 15px;
+    }
+  }
+  &.active{
+    opacity: 1;
+    transform: scale(1);
+  }
+  span{
+    color: #080808;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 5px;
+  }
+}
+
+.feed-back-close{
+  background-image: url("../img/icons/close.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 27px;
+  height: 28px;
+  position: fixed;
+  bottom: 45px;
+  right: -24px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,1);
+  border-radius: 50px;
+  @if $adaptive == true {
+    @media (max-width: 435px){
+      bottom: 48px;
+      right: 0;
+    }
+  }
+}
+
+.btn-call{
+  width: 122px;
+  height: 27px;
+  border-radius: 10px;
+  background-color: #006633;
+  color: #f1e309;
+  font-size: 18px;
+  font-weight: 700;
+  &:hover,&:focus{
+    color: #f1e309;
+    background-color: darken(#006633, 5);
+  }
+}
+
 
 
 
