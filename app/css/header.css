@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Myriad Pro";
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.svg#Myriad Pro") format("svg"); }
 
 @font-face {
   font-family: "Myriad Pro";
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
   src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.svg#Myriad Pro") format("svg"); }
 
